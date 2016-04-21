@@ -1,3 +1,5 @@
+// app.js is Hailun Li's COMP1072 final exam about a dice rolling
+// web application. The file is created on April 21, 2016.
 /// <reference path="../typings/tsd.d.ts" />
 
 // setup your IIFE (Immediately Invoked Function Expression)
@@ -13,16 +15,16 @@
     canvas.setAttribute("width", screenWidth);
     canvas.setAttribute("height", "720");
 
-    var d1image = document.getElementById("d1image");
-    var d2image = document.getElementById("d2image");
-
     // create a stage container object
     var stage = new createjs.Stage(canvas);
 
-    function roll(){
+    var dice1 = getElementById('dice1');
+    var dice2 = getElementById('dice2');
+    var d1image = document.getElementById("d1image");
+    var d2image = document.getElementById("d2image");
 
-        var dice1 = getElementById('dice1');
-        var dice2 = getElementById('dice2');
+    // generate random number
+    function roll(){
 
         var d1value = Math.floor((Math.random()*6+)1);
         var d2value = Math.floor((Math.random()*6+)1);
@@ -33,7 +35,7 @@
         stage.update();
         image();
     }
-
+    // generate image according to dice value
     function image() {
       if (d1value = 1) {
       d1image = new createjs.Bitmap(../assets/images/Dice1);
