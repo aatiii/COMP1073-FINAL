@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="scripts/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="content/app.css">
     <title>COMP1073 - Final Exam</title>
 </head>
 <body>
-<canvas id="canvas"></canvas>
+<canvas id="canvas">
+  <div id="d1image"></div>
+  <div id="dice1" class="dice">#</div>
+  <div id="d2image"></div>
+  <div id="dice2" class="dice">#</div>
+</canvas>
+<button onclick="roll()">Roll</button>
 
 <!-- JavaScript Libraries Section -->
 <script src="scripts/lib/jquery/dist/jquery.min.js"></script>
@@ -19,5 +26,5 @@
 <script src="scripts/lib/PreloadJS/lib/preloadjs-0.6.2.min.js"></script>
 
 <!-- App JavaScript -->
-<script src="Scripts/app.js"></script>
+<script src="scripts/app.js"></script>
 </body>
