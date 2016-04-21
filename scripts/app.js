@@ -24,7 +24,7 @@
     var d2image = document.getElementById("d2image");
 
     // generate random number
-    function roll(){
+    $('#roll').click(function() {
 
         var d1value = Math.floor((Math.random()*6+)1);
         var d2value = Math.floor((Math.random()*6+)1);
@@ -34,7 +34,7 @@
 
         stage.update();
         image();
-    }
+    });
     // generate image according to dice value
     function image() {
       if (d1value = 1) {
